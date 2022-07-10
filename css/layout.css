@@ -73,9 +73,12 @@
 }
 
 /*  Newscard-Styles  */
-
+.newscard {
+    margin-bottom: 2em;
+}
 .newscard-wrapper {
     padding-bottom: 5em;
+
 }
 
 .newscard-title {
