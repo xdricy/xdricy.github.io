@@ -62,10 +62,8 @@
     background-repeat: no-repeat;
     width: 100vw;
     height: 90vh;
-    top:0;
-    left:0;
     object-fit: cover;
-    z-index: -100;
+  
 }
 
 .stage-content {
@@ -223,7 +221,7 @@
     display: block;
 }
 
-@media (max-width: 999px) {
+@media (max-width: 399px) {
     .mammals-overview {
         flex-direction: column;
     }
@@ -236,7 +234,7 @@
     }
 }
 
-@media (min-width: 699px) {
+@media (min-width: 400px) {
     .grid-overview {
         display: grid;
         grid-template: repeat(4, minmax(200px, 1fr)) / 1fr 1fr;
@@ -279,7 +277,7 @@
 
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
     .grid-overview {
         display: grid;
         grid-template: repeat(2, minmax(200px, 1fr)) / 1fr 1fr 1fr;
@@ -327,7 +325,7 @@
 
 /* NEWS GRID MEDIA QUERY */
 
-@media (min-width: 600px) {
+@media (min-width: 1000px) {
 
     .grid-newscard {
         display: grid;

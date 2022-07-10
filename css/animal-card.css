@@ -4,7 +4,7 @@
 
 .animal-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 1.5em;
     padding: 3em 1em 3em;
 }
@@ -107,7 +107,7 @@
 
 /* ================ grid styles ================ */
 
-@media (min-width: 1000px) {
+@media (min-width:1000px) {
 
     .grid {
         display: grid;

@@ -76,7 +76,7 @@
 
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1200px) {
 
     .navbar {
         height:4rem;
@@ -132,7 +132,7 @@
     transition: all 0.3s ease-in-out;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1200px) {
 
    
     .burger {
