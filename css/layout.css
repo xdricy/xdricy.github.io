@@ -1,0 +1,371 @@
+/*  ============= GENERAL LAYOUT STYLES  ============= */
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.divider {
+    height: 1px;
+    background-color: var(--color-black);
+    margin-bottom: 2.5em;
+
+}
+
+.divider-shortened {
+    width: 80%;
+}
+
+/*  ============= MARGIN AND PADDING  ============= */
+.margin-bottom {
+    margin-bottom: 2em;
+}
+
+.margin-top {
+    margin-top: 2em;
+}
+
+.margin-top-auto {
+    margin-top: auto;
+}
+
+.margin-right {
+    margin-right: 2rem;
+}
+
+.conservation-status {
+    margin-top: 2em;
+}
+
+.padding-top {
+    padding-top: 2em;
+}
+
+.padding-bottom {
+    padding-bottom: 2em;
+}
+
+/* Detailpage population Section */
+
+.no-margin-bottom {
+    margin: 0;
+}
+
+/* ============================== INDEX STYLES ============================== */
+.stage-wrapper {
+
+    background-image: url("../video/stage-video.gif");
+    background-color: var(--color-black);
+    background-position: center;
+    height: 90vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    object-fit: cover;
+    z-index: -100;
+}
+
+.stage-content {
+    padding: 3em;
+    align-self: flex-end;
+    color: var(--color-white);
+}
+
+/*  Newscard-Styles  */
+
+.newscard-wrapper {
+    padding-bottom: 5em;
+}
+
+.newscard-title {
+    font-weight: 700;
+    padding-top: 1em;
+}
+
+
+.newscard-text {
+    margin-bottom: 1em;
+}
+
+.newscard-content {
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    padding-bottom: 1em;
+
+}
+
+.newscard-title,
+.newscard-text,
+.newscard-link {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+
+.link-centered {
+    text-align: center;
+    display: block;
+    padding: 2rem;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+/*  ABOUT US SECTION  */
+
+.about-section {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.flex-section-content {
+    padding: 2em;
+}
+
+
+
+/*  ANIMALS SECTION  */
+
+.animals-section {
+    padding: 2em 0;
+    color: var(--color-black);
+}
+
+.bg-accent {
+    background-color: var(--color-white);
+}
+
+.flex-section .animal-cards {
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+/* SUPPORT SECTION  */
+
+.support-section {
+    padding: 2em 0;
+    margin: 5em auto 0;
+    text-align: center;
+}
+
+.support-section .btn {
+
+    margin: 2em auto 0;
+}
+
+
+
+/* ============================== INDEX STYLES CLOSED ============================== */
+
+/* ============================== OVERVIEW STYLES ================================== */
+.featured-animal-card {
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--color-white);
+    padding: 1em;
+    min-height: 300px;
+    cursor: pointer;
+}
+
+.featured-animal-card:hover {
+    transform: translateY(-7px);
+    transition: all 0.3s ease 0s;
+}
+
+.aside-species,
+.aside-habitat,
+.aside-habitat-2 {
+    padding: 1em;
+}
+
+.background-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.animal-1 {
+    background-image: url("../images/overviewpage/porpoise.jpg");
+    background-repeat: no-repeat;
+}
+
+.animal-2 {
+    background-image: url("../images/overviewpage/bear.jpg");
+}
+
+.animal-3 {
+    background-image: url("../images/overviewpage/flamingo.jpg");
+    background-repeat: no-repeat;
+}
+
+.animal-mammals {
+    background-image: url("../images/overviewpage-mammals/mountain-goat.jpg");
+    background-repeat: no-repeat;
+}
+
+.animal-mammals {
+    width: 100%;
+}
+
+.aside-habitat-2 {
+    min-width: 200px;
+    margin-right: 2em;
+}
+
+.grid-overview {
+    display: block;
+}
+
+@media (max-width: 499px) {
+    .mammals-overview {
+        flex-direction: column;
+    }
+
+
+
+    .aside-habitat-2 {
+        width: 100%;
+        margin-right: 0em;
+    }
+}
+
+@media (min-width: 399px) {
+    .grid-overview {
+        display: grid;
+        grid-template: repeat(4, minmax(200px, 1fr)) / 1fr 1fr;
+        gap: 1.5em;
+        grid-template-areas:
+            "aside-species aside-habitat"
+            " animal-1 animal-1"
+            "animal-2 animal-2"
+            "animal-3 animal-3";
+    }
+
+    .aside-species {
+        grid-area: aside-species;
+        margin-bottom: 0;
+
+    }
+
+    .aside-habitat {
+        grid-area: aside-habitat;
+        margin-bottom: 0;
+
+
+    }
+
+    .animal-1 {
+        grid-area: animal-1;
+        margin-bottom: 0;
+
+    }
+
+    .animal-2 {
+        grid-area: animal-2;
+        margin-bottom: 0;
+    }
+
+    .animal-3 {
+        grid-area: animal-3;
+        margin-bottom: 0;
+    }
+
+}
+
+@media (min-width: 699px) {
+    .grid-overview {
+        display: grid;
+        grid-template: repeat(2, minmax(200px, 1fr)) / 1fr 1fr 1fr;
+        gap: 1.5em;
+        grid-template-areas:
+            "aside-species animal-1 animal-1"
+            "aside-habitat animal-2 animal-3";
+    }
+
+    .aside-species {
+        grid-area: aside-species;
+        margin-bottom: 0;
+
+    }
+
+    .aside-habitat {
+        grid-area: aside-habitat;
+        margin-bottom: 0;
+
+
+    }
+
+    .animal-1 {
+        grid-area: animal-1;
+        margin-bottom: 0;
+
+    }
+
+    .animal-2 {
+        grid-area: animal-2;
+        margin-bottom: 0;
+    }
+
+    .animal-3 {
+        grid-area: animal-3;
+        margin-bottom: 0;
+    }
+}
+
+
+/* ============================== OVERVIEW STYLES CLOSED =========================== */
+
+
+
+
+/* NEWS GRID MEDIA QUERY */
+
+@media (min-width: 200px) {
+
+    .grid-newscard {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 1.5em;
+        margin-top: 2em;
+        /* padding: 3em 1em 8em; */
+    }
+
+}
+
+/* ABOUT US MEDIA QUERY */
+
+@media (min-width: 799px) {
+
+    .flex-section {
+        display: flex;
+        align-items: center;
+    }
+
+    .flex-section-img {
+        flex: 1 0 50%;
+        align-items: center;
+    }
+
+    .animals-section .flex-section-content {
+        order: 1;
+    }
+
+    .animals-section .flex-section-img {
+        order: 2;
+    }
+}
+
+@media (max-width: 899px) {
+    .animal-fact-box {
+        flex-direction: column;
+    }
+
+    .flex-img {
+        height: 50vh;
+    }
+}

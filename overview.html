@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CodePen - Responsive Navigation Menu with Search Bar</title>
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css'>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- =============================================================================
+   ============================navbar======================================
+ ============================================================================= -->
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <a href="./index.html"><img src="logo.svg" alt="Redlist Logo" class="logo"></a>
+            <div class="burger" id="burger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </div>
+            <span class="overlay"></span>
+            <div class="menu" id="menu">
+                <ul class="menu-inner">
+                    <li class="menu-item"><a class="menu-link menu-link-current" href="overview.html">Animals</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#">About</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#">News</a></li>
+                    <li class="menu-item"><a class="menu-link" href="#">Take Action</a></li>
+                </ul>
+            </div>
+            <button><i class="bx bx-search search-toggle"></i></button>
+            <form class="search-block">
+                <span><i class="bx bx-arrow-back search-cancel"></i></span>
+                <input type="search" name="search" class="search-input" placeholder="Search here..." autofocus>
+            </form>
+        </nav>
+    </header>
+    <!-- =============================================================================
+ ============================navbar closed======================================
+============================================================================= -->
+
+
+    <main>
+        <!-- ================ FEATURED ANIAMALS SECTION ==================== -->
+        <section class="overview-grid-section container">
+            <h2 class="margin-top margin-bottom"> Discover our amazing species</h2>
+            <div class="grid-overview">
+                <!-- box 1 species-->
+                <div class="aside-species white-bg round-corner dropshadow margin-bottom">
+                    <h4>Species</h4>
+                    <div class="overview-icon-box">
+                        <div class="flex">
+                            <img src="images/icons/mammals.svg" alt="a koala icon" class="svg-icon">
+                            <a href="overview-mammals.html" class="icon-description"> Mammals</a>
+                        </div>
+                        <div class="flex">
+                            <img src="images/icons/invertebrates.svg" alt="a bug icon" class="svg-icon">
+                            <a class="icon-description"> Invertebrates</a>
+                        </div>
+                        <div class="flex ">
+                            <img src="images/icons/birds.svg" alt="a bird icon" class="svg-icon">
+                            <a class="icon-description"> Birds</a>
+                        </div>
+                        <div class="flex ">
+                            <img src="images/icons/fish.svg" alt="a fish icon" class="svg-icon">
+                            <a class="icon-description"> Fish</a>
+                        </div>
+                        <div class="flex">
+                            <img src="images/icons/reptiles.svg" alt="a crocodile head icon" class="svg-icon">
+                            <a class="icon-description"> Reptiles</a>
+                        </div>
+                        <div class="flex">
+                            <img src="images/icons/amphibians.svg" alt="a frog head icon" class="svg-icon">
+                            <a class="icon-description"> Amphibians</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- box 3 habitats -->
+                <div class="aside-habitat white-bg round-corner dropshadow margin-bottom">
+                    <h4>Habitats</h4>
+                    <div class="overview-icon-box">
+                        <div class="flex">
+                            <img src="images/icons/forest.svg" alt="a forest icon" class="svg-icon">
+                            <a class="icon-description"> Forest</a>
+                        </div>
+                        <div class="flex">
+                            <img src="images/icons/shrubland.svg" alt="a shrubland icon" class="svg-icon">
+                            <a class="icon-description"> Shrubland</a>
+                        </div>
+                        <div class="flex">
+                            <img src="images/icons/desert.svg" alt="a desert icon" class="svg-icon">
+                            <a class="icon-description"> Desert</a>
+                        </div>
+                        <div class="flex">
+                            <img src="images/icons/savanna.svg" alt="a savanna icon" class="svg-icon">
+                            <a class="icon-description"> Savanna</a>
+                        </div>
+                        <div class="flex">
+                            <img src="images/icons/marine.svg" alt="a water icon" class="svg-icon">
+                            <a class="icon-description"> Marine</a>
+                        </div>
+
+                        <div class="flex">
+                            <img src="images/icons/grassland.svg" alt="a grassland icon" class="svg-icon">
+                            <a class="icon-description"> Grasland</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- box 2 fatured animal -->
+                <div class="featured-animal-card flex background-image animal-1 round-corner dropshadow margin-bottom">
+                    <p class="featured-animal-subheading uppercase">Animal of the Year</p>
+                    <h2>Harbor Porpoise</h2>
+
+                </div>
+                <!-- box 4 featured animal -->
+                <div class="featured-animal-card flex background-image animal-2 round-corner dropshadow margin-bottom">
+                    <p class="featured-animal-subheading uppercase">Featured Species</p>
+                    <h2>Brown bear</h2>
+        
+                </div>
+
+                <!-- box 5 featured animal -->
+                <div class="featured-animal-card flex background-image animal-3 round-corner dropshadow margin-bottom">
+                    <p class="featured-animal-subheading uppercase">Featured Species</p>
+                    <h2>American flamingo</h2>
+                </div>
+            </div>
+
+
+        </section>
+
+
+        <div class="round-corner-top white-bg">
+            <!-- ================ SCALE SECTION ==================== -->
+            <section class="container interactive-scale-section">
+                <h3 class="margin-top padding-top"> Conservation status</h3>
+                <div class="step-indicator">
+                    <div class="step">
+                        <button data-tab="DD" class="b-nav-tab step-icon">DD
+                        </button>
+                    </div>
+                    <div class="indicator-line"></div>
+                    <div class="step">
+                        <button data-tab="LC" class="b-nav-tab step-icon">
+                            LC
+                        </button>
+                    </div>
+                    <div class="indicator-line"></div>
+                    <div class="step">
+                        <button data-tab="NT" class="b-nav-tab step-icon">
+                            NT
+                        </button>
+                    </div>
+                    <div class="indicator-line"></div>
+                    <div class="step">
+                        <button data-tab="VU" class="b-nav-tab step-icon">
+                            VU
+                        </button>
+                    </div>
+                    <div class="indicator-line"></div>
+                    <div class="step">
+                        <button data-tab="EN" class="b-nav-tab step-icon">
+                            EN
+                        </button>
+                    </div>
+                    <div class="indicator-line"></div>
+                    <div class="step">
+                        <button data-tab="CR" class=" b-nav-tab step-icon step-icon-active active-scale">
+                            CR
+                        </button>
+                    </div>
+                    <div class="indicator-line"></div>
+                    <div class="step">
+                        <button data-tab="EW" class="b-nav-tab step-icon">
+                            EW
+                        </button>
+                    </div>
+                    <div class="indicator-line"></div>
+                    <div class="step">
+                        <button data-tab="EX" class="b-nav-tab step-icon">
+                            EX
+                        </button>
+                    </div>
+
+                </div>
+                <div class="scale-description flex margin-bottom">
+                    <p> Least concern</p>
+                    <p> Extinct</p>
+                </div>
+
+                <div id="DD" class="b-tab active-scale">
+                    <h4>Data Deficient</h4>
+                    A taxon is Data Deficient (DD) when there is inadequate information to
+                    make a direct, or indirect, assessment of its risk of extinction based on
+                    its distribution and/or population status. A taxon in this category may be
+                    well studied, and its biology well known, but appropriate data on
+                    abundance and/or distribution are lacking.
+                </div>
+                <div id="LC" class="b-tab">
+                    <h4>Least Concern</h4>
+                    A taxon is Least Concern (LC) when it has been evaluated against the
+                    Red List criteria and does not qualify for Critically Endangered,
+                    Endangered, Vulnerable or Near Threatened.
+                </div>
+                <div id="NT" class="b-tab">
+                    <h4>Near Threatened</h4>
+                    A taxon is Near Threatened (NT) when it has been evaluated against
+                    the criteria but does not qualify for Critically Endangered,
+                    Endangered or Vulnerable now, but is close to qualifying for or is likely
+                    to quality Tor a threatened category in the near ruture
+                </div>
+                <div id="VU" class="b-tab">
+                    <h4>Vulnerable</h4>
+                    A taxon is Vulnerable (l) when the best available evidence indicates
+                    that it meets any of the criteria A to E for Vulnerable, and it is therefore
+                    Considered to De Tacing a nign risk or extinction In the wild
+
+                </div>
+                <div id="EN" class="b-tab">
+                    <h4>Endangered</h4>
+
+                    when it has been evaluated against the criteria but does not qualify for Critically Endangered,
+                    Endangered
+                    or Vulnerable now, but is close to qualifying for or is likely to qualify for a threatened
+                    category
+                    in the
+                    near future.
+
+                </div>
+                <div id="CR" class="b-tab">
+                    <h4>Critically Endangered</h4>
+                    A taxon is Critically Endangered (CR) when the best available
+                    evidence indicates that it meets any of the criteria A to E for Critically
+                    Endangered, and it is therefore considered to be facing an extremely high
+                    risk of extinction in the wild
+
+                </div>
+                <div id="EW" class="b-tab">
+                    <h4>Extinct in the Wild</h4>
+                    A taxon IS Extinct In The Wild (EW) When It IS known onlv to survive In
+                    cultivation, In captivity or as a naturalized population (or populations
+                    well outside the past range. A taxon is presumed Extinct In the Wild
+                    When exhaustive Surveys In Known and/or expected habitat, at
+                    appropriate times (diurnal, seasonal, annual), throughout its historic
+                    range have ralled to record an individual. Surveys should be over a tim€
+                    trame appropriate to the taxons life cvcle and life torm.
+
+                </div>
+                <div id="EX" class="b-tab">
+                    <h4>Extinct</h4>
+                    A taxon is Extinct (EX) when there is no reasonable doubt that the last
+                    individual has died. A taxon Is presumed Extinct When exnaustive
+                    surveys In Known and/or expected habitat, at appropriate times ( diurnal,
+                    seasonal, annual), throughout its historic range have falled to record an
+                    individual. surveys should be over a time trame appropriate to the
+                    taxons life cvcle and life torm.
+
+                </div>
+            </section>
+
+            <!-- ================ SCALE SECTION CLOSED ==================== -->
+            <!-- ================ ANIMAL CARDS SECTION ================ -->
+            <section class="container">
+                <h3 class="animal-card-heading margin-top"> Recently Assessed species</h3>
+                <div class="animal-cards">
+                    <!--card 1 -->
+                    <a href="#">
+                        <div class="animal-card">
+                            <div class="animal-card-header">
+                                <p class="body-text">Actinopterygii</p>
+                                <h3 class="animal-card-title">Social Wrasse</h3>
+                                <p class="body-text">Halichoeres socialis</p>
+                            </div>
+                            <img src="images/overviewpage/wrasse.jpg" alt="a colorful fish swimming in the ocean">
+                            <div class="animal-card-info">
+                                <div class="status-circle EN"> <strong>EN</strong></div>
+                                <p class="animal-card-indicator-grey body-text"> Unknown</p>
+                            </div>
+                        </div>
+                    </a>
+
+
+                    <!--card 2 -->
+                    <a href="#">
+                        <div class="animal-card">
+                            <div class="animal-card-header">
+                                <p class="body-text"> Mammalia</p>
+                                <h3 class="animal-card-title">Okapi</h3>
+                                <p class="body-text">Okapia johnstoni</p>
+                            </div>
+                            <img src="images/overviewpage/okapia.jpg" alt="a brown okapi with its head to the left">
+                            <div class="animal-card-info">
+                                <div class="status-circle EN"> <strong>EN</strong></div>
+                                <p class="animal-card-indicator-red body-text"> Decreasing <span
+                                        class="arrow-scale">▼</span></p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!--card 3 -->
+                    <a href="#">
+                        <div class="animal-card">
+                            <div class="animal-card-header">
+                                <p class="body-text">Amphibia</p>
+                                <h3 class="animal-card-title">Darwin's Frog</h3>
+                                <p class="body-text">Rhinoderma darwinii</p>
+                            </div>
+                            <img src="images/overviewpage/frog.jpg" alt="a green frog on the jungle floor">
+                            <div class="animal-card-info">
+                                <div class="status-circle EN"> <strong>EN</strong></div>
+                                <p class="animal-card-indicator-red body-text"> Decreasing <span
+                                        class="arrow-scale">▼</span></p>
+                            </div>
+                        </div>
+                    </a>
+
+
+                    <!--card 4 -->
+                    <a href="#">
+                        <div class="animal-card">
+                            <div class="animal-card-header">
+                                <p class="body-text"> Mammalia</p>
+                                <h3 class="animal-card-title">Lion</h3>
+                                <p class="body-text">Panthera leo</p>
+                            </div>
+                            <img src="images/overviewpage/lion.jpg" alt="a lion in the savanna">
+                            <div class="animal-card-info">
+                                <div class="status-circle VU"> <strong>VU</strong></div>
+                                <p class="animal-card-indicator-red body-text"> Decreasing <span
+                                        class="arrow-scale">▼</span></p>
+                            </div>
+                        </div>
+                    </a>
+
+
+                    <!--card 5 -->
+                    <a href="#">
+                        <div class="animal-card">
+                            <div class="animal-card-header">
+                                <p class="body-text">Aves</p>
+                                <h3 class="animal-card-title">Mayotte Drongo</h3>
+                                <p class="body-text">Dermanura watsoni</p>
+                            </div>
+                            <img src="images/overviewpage/mayotte.jpg" alt="a black bird in a tree">
+                            <div class="animal-card-info">
+                                <div class="status-circle VU"> <strong>VU</strong></div>
+                                <p class="animal-card-indicator-red body-text"> Decreasing <span
+                                        class="arrow-scale">▼</span></p>
+                            </div>
+                        </div>
+                    </a>
+
+
+                    <!--card 6 -->
+                    <a href="#">
+                        <div class="animal-card">
+                            <div class="animal-card-header">
+                                <p class="body-text">Reptilia</p>
+                                <h3 class="animal-card-title">Siamese Crocodile</h3>
+                                <p class="body-text">Crocodylus siamensis</p>
+                            </div>
+                            <img src="images/overviewpage/crocodile.jpg" alt="a crocodile lying on grass">
+                            <div class="animal-card-info">
+                                <div class="status-circle CR"> <strong>CR</strong></div>
+                                <p class="animal-card-indicator-red body-text"> Decreasing <span
+                                        class="arrow-scale">▼</span></p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!--card 7 -->
+                    <a href="#">
+                        <div class="animal-card">
+                            <div class="animal-card-header">
+                                <p class="body-text">Aves</p>
+                                <h3 class="animal-card-title">Iraq Babbler</h3>
+                                <p class="body-text">Argya altirostris</p>
+                            </div>
+                            <img src="images/overviewpage/babbler.jpg" alt="a brown bird sitting on bamboo ">
+                            <div class="animal-card-info">
+                                <div class="status-circle LC"> <strong>LC</strong></div>
+                                <p class="animal-card-indicator-red body-text"> Decreasing <span
+                                        class="arrow-scale">▼</span></p>
+                            </div>
+                        </div>
+                    </a>
+                    <!--card 8 -->
+                    <a href="#">
+                        <div class="animal-card">
+                            <div class="animal-card-header">
+                                <p class="body-text">Carcharhiniformes</p>
+                                <h3 class="animal-card-title">Scalloped Hammerhead</h3>
+                                <p class="body-text">Sphyrna lewini</p>
+                            </div>
+                            <img src="images/overviewpage/hammerhead.jpg" alt="a hammershark in the ocean">
+                            <div class="animal-card-info">
+                                <div class="status-circle CR"> <strong>CR</strong></div>
+                                <p class="animal-card-indicator-red body-text"> Decreasing
+                                    <span class="arrow-scale">▼</span>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!--card 9 -->
+                    <a href="#">
+                        <div class="animal-card">
+                            <div class="animal-card-header">
+                                <p class="body-text">Mammalia</p>
+                                <h3 class="animal-card-title">Takin</h3>
+                                <p class="body-text">Budorcas taxicolor</p>
+                            </div>
+                            <img src="images/overviewpage/takin.jpg" alt="a takin with its baby on the right">
+                            <div class="animal-card-info">
+                                <div class="status-circle VU"> <strong>VU</strong></div>
+                                <p class="animal-card-indicator-red body-text"> Decreasing <span
+                                        class="arrow-scale">▼</span></p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!--card 10 -->
+                    <a href="#">
+                        <div class="animal-card">
+                            <div class="animal-card-header">
+                                <p class="body-text">Mammalia</p>
+                                <h3 class="animal-card-title">Red Serow</h3>
+                                <p class="body-text">Capricornis rubidus</p>
+                            </div>
+                            <img src="images/overviewpage/red-serow.jpg" alt="a serow looking to the right">
+                            <div class="animal-card-info">
+                                <div class="status-circle VU"> <strong>VU</strong></div>
+                                <p class="animal-card-indicator-red body-text"> Decreasing <span
+                                        class="arrow-scale">▼</span></p>
+                            </div>
+                        </div>
+                    </a>
+                    <!--card 11 -->
+                    <a href="#">
+                        <div class="animal-card">
+                            <div class="animal-card-header">
+                                <p class="body-text">Mammalia</p>
+                                <h3 class="animal-card-title">African Savanna Elephant</h3>
+                                <p class="body-text">Loxodonta africana
+                                </p>
+                            </div>
+                            <img src="images/overviewpage/elephant.jpg" alt="an elephant in a river">
+                            <div class="animal-card-info">
+                                <div class="status-circle EN"> <strong>EN</strong></div>
+                                <p class="animal-card-indicator-red body-text"> Decreasing <span
+                                        class="arrow-scale">▼</span></p>
+                            </div>
+                        </div>
+                    </a>
+                    <!--card 12 -->
+                    <a href="#">
+                        <div class="animal-card">
+                            <div class="animal-card-header">
+                                <p class="body-text">Arachnida</p>
+                                <h3 class="animal-card-title">Peacock Tarantula</h3>
+                                <p class="body-text">Poecilotheria metallica</p>
+                            </div>
+                            <img src="images/overviewpage/tarantula.jpg" alt="a blue tarantula on stones">
+                            <div class="animal-card-info">
+                                <div class="status-circle CR"> <strong>CR</strong></div>
+                                <p class="animal-card-indicator-red body-text"> Decreasing <span
+                                        class="arrow-scale">▼</span></p>
+                            </div>
+                        </div>
+                    </a>
+                    <!--card 13 -->
+                    <a href="#">
+                        <div class="animal-card">
+                            <div class="animal-card-header">
+                                <p class="body-text">Invertebrates</p>
+                                <h3 class="animal-card-title">Variable Bluet</h3>
+                                <p class="body-text">Coenagrion pulchellum </p>
+                            </div>
+                            <img src="images/overviewpage/bluet.jpg" alt="a blue invertebrate species on a branch">
+                            <div class="animal-card-info">
+                                <div class="status-circle LC"> <strong>LC</strong></div>
+                                <p class="animal-card-indicator-green body-text"> Stable <span
+                                        class="arrow-scale">━</span></p>
+                            </div>
+                        </div>
+                    </a>
+                    <!--card 14 -->
+                    <a href="#">
+                        <div class="animal-card">
+                            <div class="animal-card-header">
+                                <p class="body-text">Aves</p>
+                                <h3 class="animal-card-title">Blue- and yellow Macaw</h3>
+                                <p class="body-text">Ara ararauna</p>
+                            </div>
+                            <img src="images/overviewpage/macaw.jpg" alt="a blue parot flying">
+                            <div class="animal-card-info">
+                                <div class="status-circle LC"> <strong>LC</strong></div>
+                                <p class="animal-card-indicator-red body-text"> Decreasing <span
+                                        class="arrow-scale">▼</span></p>
+                            </div>
+                        </div>
+                    </a>
+                    <!--card 15 -->
+                    <a href="#">
+                        <div class="animal-card">
+                            <div class="animal-card-header">
+                                <p class="body-text">Mammalia</p>
+                                <h3 class="animal-card-title">Common Wombat</h3>
+                                <p class="body-text">Vombatus ursinus</p>
+                            </div>
+                            <img src="images/overviewpage/wombat.jpg" alt="a fluffy wombat searching for food in the grass">
+                            <div class="animal-card-info">
+                                <div class="status-circle LC"> <strong>LC</strong></div>
+                                <p class="animal-card-indicator-green body-text">Stable <span
+                                        class="arrow-scale">━</span></p>
+                            </div>
+                        </div>
+                    </a>
+                    <!--card 16 -->
+                    <a href="#">
+                        <div class="animal-card">
+                            <div class="animal-card-header">
+                                <p class="body-text">Mammalia</p>
+                                <h3 class="animal-card-title">Pygmy Raccoon</h3>
+                                <p class="body-text">Procyon pygmaeus</p>
+                            </div>
+                            <img src="images/overviewpage/raccoon.jpg" alt="a takin with its baby on the right">
+                            <div class="animal-card-info">
+                                <div class="status-circle CR"> <strong>CR</strong></div>
+                                <p class="animal-card-indicator-red body-text"> Decreasing <span
+                                        class="arrow-scale">▼</span></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <a href="#" class="link-centered">
+                    <a href="#" class="link-centered"> View more recently assessed species</a>
+                <!-- ================== ANIMAL CARDS SECTION CLOSED ============================= -->
+
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="row">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+
+            <div class="row">
+                <ul>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+
+                </ul>
+            </div>
+
+            <div class="row">
+                REDLIST © 2022 - All rights reserved
+            </div>
+        </div>
+    </footer>
+    <!-- JS -->
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>

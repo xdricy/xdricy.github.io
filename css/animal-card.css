@@ -1,0 +1,166 @@
+.animal-card-heading {
+    padding-left: .5em;
+}
+
+.animal-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1.5em;
+    padding: 3em 1em 3em;
+}
+
+.animal-cards a{
+    transition: all 0.3s ease 0s;
+}
+
+.animal-cards a.dead .animal-card .no-image{
+    background: var(--color-black);
+    aspect-ratio: 3 / 2;
+    width: 100%;
+    margin-top:auto;
+}
+
+/* .animal-cards a.dead {
+    opacity: 0.5;
+} */
+
+.animal-cards a:hover {
+    transform: translateY(-7px);
+}
+
+.animal-cards a:hover {
+    color: var(--color-black);
+    }
+    
+
+.animal-card img {
+    width: 100%;
+    margin-top:auto;
+    aspect-ratio: 3 / 2;
+}
+
+.animal-card {
+    box-shadow: 0 0 1em rgba(0, 0, 0, .25);
+    background: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.animal-card-title {
+    font-size: 1.5rem;
+    line-height: 1.1em;
+    color: #000;
+    margin-bottom: .5em;
+}
+
+.animal-card-header {
+    padding: 1em;
+
+}
+
+.animal-card-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.status-circle {
+    display: flex;
+    /* background: var(--color-black); */
+    /* color: var(--color-white); */
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+
+/* ============== Indicator styles ============== */
+
+.animal-card-indicator-red, .animal-card-indicator-green, .animal-card-indicator-grey {
+    background: var(--color-palepink);
+    color: var(--color-mainred);
+    font-weight: 600;
+    border-radius: 50px;
+    padding: .25em .5em;
+}
+
+.animal-card-indicator-red {
+    background: var(--color-palepink);
+    color: var(--color-mainred);
+}
+
+.animal-card-indicator-green {
+    background: var(--color-palegreen);
+    color: var(--color-darkgreen);
+}
+
+.animal-card-indicator-grey {
+    background: var(--color-grey3);
+    color: var(--color-black);
+}
+
+
+/* ================ grid styles ================ */
+
+@media (min-width: 1000px) {
+
+    .grid {
+        display: grid;
+
+    }
+
+    .grid-detailpage {
+        grid-template: 1fr 1fr / 1fr 1fr;
+        grid-template-areas:
+            " animal-image-card conservation-status"
+            " animal-image-card animal-fact-box";
+        gap: 1.5em;
+
+    }
+
+    .animal-image-card {
+        margin-top: 0em;
+    }
+
+    .conservation-status {
+        margin-top: 0em;
+    }
+
+    .animal-fact-box {
+        margin-top: 0em;
+    
+    }
+
+    .animal-image-card {
+        grid-area: animal-image-card;
+    }
+
+    .conservation-status {
+        grid-area: conservation-status;
+
+    }
+
+    .animal-fact-box {
+        grid-area: animal-fact-box;
+    }
+
+    .flex-dsk {
+        display: flex;
+        justify-content: space-between;
+        margin: 2em 0;
+    }
+
+    .col1 {
+        width: 48%;
+    }
+
+    .col2 {
+        width: 48%;
+    }
+
+}

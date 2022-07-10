@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <title>CodePen - Responsive Navigation Menu with Search Bar</title>
+   <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css'>
+   <link rel="stylesheet" href="css/styles.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+      rel="stylesheet">
+   <!-- Font Awesome Links -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+   <!-- =============================================================================
+   ============================navbar======================================
+ ============================================================================= -->
+   <header class="header" id="header">
+      <nav class="navbar container">
+         <a href="./index.html"><img src="logo.svg" alt="Redlist Logo" class="logo"></a>
+         <div class="burger" id="burger">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+         </div>
+         <span class="overlay"></span>
+         <div class="menu" id="menu">
+            <ul class="menu-inner">
+               <li class="menu-item"><a class="menu-link menu-link-current" href="overview.html">Animals</a></li>
+               <li class="menu-item"><a class="menu-link" href="#">About</a></li>
+               <li class="menu-item"><a class="menu-link" href="#">News</a></li>
+               <li class="menu-item"><a class="menu-link" href="#">Take Action</a></li>
+            </ul>
+         </div>
+         <button><i class="bx bx-search search-toggle"></i></button>
+         <form class="search-block">
+            <span><i class="bx bx-arrow-back search-cancel"></i></span>
+            <input type="search" name="search" class="search-input" placeholder="Search here..." autofocus>
+         </form>
+      </nav>
+   </header>
+   <!-- =============================================================================
+   ============================navbar closed======================================
+ ============================================================================= -->
+
+   <div class="breadcrumb container">
+      <a href="overview.html" class="bc-item"> Animals /</a>
+      <a href="overview-mammals.html" class="bc-item"> Mammals /</a>
+      <a href="#" class="bc-item bc-item-current"> Black Rhino</a>
+   </div>
+
+   <div class="container">
+      <!--================== Animal Details Section ================== -->
+      <section class="animal-overview">
+         <div class="animal-title">
+            <h1 class="Animal"> Black Rhino</h1>
+            <p class="latin-name"> Diceros bicornis</p>
+         </div>
+         <div class="grid grid-detailpage margin-bottom">
+            <!-- LEFT -->
+            <div class="animal-image-card round-corner white-bg dropshadow">
+               <img src="images/detailpage/black-rhino.jpg" alt="a black rhino in shrubland"
+                  class="img-animal round-corner-top">
+               <div class="box-spacing flex flex-column">
+                  <div class="flex">
+                     <div class="margin-right">
+                        <p class="figure-description">Mature Individuals:</p>
+                        <p class="figure-individuals">3.142</p>
+                     </div>
+
+                     <div>
+                        <p class="figure-description">Population Trend:</p>
+                        <div class="development-indicator">
+                           <p class="development-indicator-text">▲ Increasing</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="margin-top">
+                     <p class="figure-description">Last Assessed: <strong> 14 January 2010 </strong></p>
+                     <p class="figure-description"> Assessment: <strong>GLOBAL </strong></p>
+                  </div>
+               </div>
+            </div>
+            <!-- LEFT CLOSE -->
+
+            <!-- RIGHT -->
+            <!-- STATUS BOX -->
+            <div class="conservation-status box-spacing white-bg round-corner dropshadow no-ma">
+               <h4>Conservation Status <br /><span class="text-colored">Critically Endangered</span></h4>
+               <div class="round-corner-top white-bg">
+                  <!-- ================ SCALE SECTION ==================== -->
+                  <div class=" interactive-scale-section">
+
+                     <div class="step-indicator">
+                        <div class="step">
+                           <button data-tab="DD" class="b-nav-tab step-icon">DD
+                           </button>
+                        </div>
+                        <div class="indicator-line"></div>
+                        <div class="step">
+                           <button data-tab="LC" class="b-nav-tab step-icon">
+                              LC
+                           </button>
+                        </div>
+                        <div class="indicator-line"></div>
+                        <div class="step">
+                           <button data-tab="NT" class="b-nav-tab step-icon">
+                              NT
+                           </button>
+                        </div>
+                        <div class="indicator-line"></div>
+                        <div class="step">
+                           <button data-tab="VU" class="b-nav-tab step-icon">
+                              VU
+                           </button>
+                        </div>
+                        <div class="indicator-line"></div>
+                        <div class="step">
+                           <button data-tab="EN" class="b-nav-tab step-icon">
+                              EN
+                           </button>
+                        </div>
+                        <div class="indicator-line"></div>
+                        <div class="step">
+                           <button data-tab="CR" class=" b-nav-tab step-icon active-scale">
+                              CR
+                           </button>
+                        </div>
+                        <div class="indicator-line"></div>
+                        <div class="step">
+                           <button data-tab="EW" class="b-nav-tab step-icon">
+                              EW
+                           </button>
+                        </div>
+                        <div class="indicator-line"></div>
+                        <div class="step">
+                           <button data-tab="EX" class="b-nav-tab step-icon">
+                              EX
+                           </button>
+                        </div>
+                     </div>
+                     <div class="scale-description flex margin-bottom">
+                        <p> Least concern</p>
+                        <p> Extinct</p>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+            <!-- STATUS BOX CLOSE-->
+
+            <!-- ICON BOX -->
+            <!-- icon box left -->
+            <div class="animal-fact-box margin-top box-spacing white-bg round-corner dropshadow">
+               <div class="icon-box-wrapper">
+                  <div class="flex icon-box">
+                     <img class="svg-icon" src="images/icons/size.svg" alt="">
+                     <div>
+                        <p class="icon-description">
+                           <strong> size:</strong>
+                        </p>
+                        <p class="icon-description">
+                           140-180cm
+                        </p>
+                     </div>
+                  </div>
+                  <div class="flex icon-box">
+                     <img class="svg-icon" src="images/icons/weight.svg" alt="">
+                     <div>
+                        <p class="icon-description">
+                           <strong>weight</strong>
+                        </p>
+                        <p class="icon-description">
+                           1500kg
+                        </p>
+                     </div>
+                  </div>
+                  <div class="flex icon-box">
+                     <img class="svg-icon" src="images/icons/social-behavior.svg" alt="">
+                     <div>
+                        <p class="icon-description">
+                           <strong>social behavior:</strong>
+                        </p>
+                        <p class="icon-description">
+                           Solitary
+                        </p>
+                     </div>
+                  </div>
+                  <div class="flex icon-box">
+                     <img class="svg-icon" src="images/icons/top-speed.svg" alt="">
+                     <div>
+                        <p class="icon-description">
+                           <strong> speed:</strong>
+                        </p>
+                        <p class="icon-description">
+                           30-49KM/H
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <!-- icon box left close -->
+
+               <!-- icon box right  -->
+               <div class="icon-box-wrapper">
+                  <div class="flex icon-box">
+                     <img class="svg-icon" src="images/icons/origin.svg" alt="">
+                     <div>
+                        <p class="icon-description">
+                           <strong>origin:</strong>
+                        </p>
+                        <p class="icon-description">
+                           Africa
+                        </p>
+                     </div>
+                  </div>
+                  <div class="flex icon-box">
+                     <img class="svg-icon" src="images/icons/habitat.svg" alt="">
+                     <div>
+                        <p class="icon-description">
+                           <strong>habitat:</strong>
+                        </p>
+                        <p class="icon-description">
+                           Savanna
+                        </p>
+                     </div>
+                  </div>
+                  <div class="flex icon-box">
+                     <img class="svg-icon" src="images/icons/life-expectancy.svg" alt="">
+                     <div>
+                        <p class="icon-description">
+                           <strong>life expectancy:</strong>
+                        </p>
+                        <p class="icon-description">
+                           39-49 Years
+                        </p>
+                     </div>
+                  </div>
+                  <div class="flex icon-box">
+                     <img class="svg-icon" src="images/icons/gestation.svg" alt="">
+                     <div>
+                        <p class="icon-description">
+                           <strong>gestation period:</strong>
+                        </p>
+                        <p class="icon-description">
+                           over 14 months
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <!-- icon box right close -->
+               <!-- ICON BOX close -->
+               <!-- RIGHT CLOSE -->
+            </div>
+         </div>
+      </section>
+   </div>
+   <!--================== Animal Details Section Closed================== -->
+
+   <!-- ==================================================================
+   ==================== DROPDOWN SECTION =============================
+   ================================================================ -->
+   <div class="bg-change round-corner-top">
+      <div class="container">
+
+         <button class="accordion init-show">Population</button>
+         <div class="panel">
+            <!-- ================== POPULATION ================== -->
+            <div class="animal-population round-corner-top white-bg">
+               <div class="container">
+
+                  <img src="images/detailpage/population-graph.svg"
+                     alt="a graph showing the rhino population evolution">
+                  <div class="flex-dsk">
+                     <div class="col1">
+                        <p class="figure-description">Continuous decline of mature individuals:</p>
+                        <p class="body-text body-text-uppercase body-text-color"> <strong>No</strong></p>
+                        <p class="figure-description">Population severely fragmented:</p>
+                        <p class="body-text body-text-uppercase body-text-color"><strong>No</strong></p><br>
+                        <p class="body-text">Throughout most of the 20th century, the Black Rhino was the most numerous
+                           of
+                           the
+                           world's rhino species. Relentless hunting of the species and clearances of land for
+                           settlement
+                           and
+                           agriculture reduced numbers and by 1960 only an estimated 100,000 remained. </p>
+                     </div>
+                     <div class="col2">
+                        <p class="body-text">Between 1960 and 1995, large-scale poaching caused a dramatic 98% collapse
+                           in
+                           numbers with numbers bottoming out in the mid 1990s. Over this period numbers only increased
+                           in
+                           South Africa and Namibia (Emslie and Brooks 1999). From 1992–1997 total numbers remained
+                           relatively
+                           stable with increases in some countries (those with the best-protected and managed
+                           populations)
+                           being cancelled out by declines in others. However, since the lows of the mid-1990s, Black
+                           Rhino
+                           numbers at a continental level have more than doubled reaching and estimated 5,495 by end
+                           2017
+                           (Emslie et al. 2019) and 5,630 by end 2018 (Knight 2019). Figure 1 in the attached
+                           Supplementary
+                           Information documentation shows how estimated total numbers of Black Rhino have changed over
+                           the
+                           last three-generations based on best estimates of rhino numbers per subspecies per country
+                           per
+                           year
+                           going back three-generations to 1973.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- ================== POPULATION CLOSED ================== -->
+
+         </div>
+
+         <button class="accordion init-show">Habitat</button>
+         <div class="panel">
+            <!-- ================== HABITAT ================== -->
+            <div class="animal-habitat white-bg">
+               <div class="container">
+                  <img src="images/detailpage/karte.svg" alt="a map of africa showing the habitats of black rhinos">
+                  <div class="flex-dsk">
+                     <div class="col1 margin-top">
+                        <p class="figure-description">System:</p>
+                        <p class="body-text body-text-uppercase"><strong>Terrestrial</strong></p><br>
+                        <p class="figure-description">Generational Length (years):</p>
+                        <p class="body-text"><strong>14.96</strong></p><br>
+                        <p class="figure-description">Continuing decline in area and/or quality of habitat:</p>
+                        <p class="body-text body-text-uppercase body-text-color"><strong>No</strong></p><br>
+                        <p class="body-text">Black Rhino occur in a wide variety of habitats from desert areas in
+                           Namibia
+                           to wetter wooded areas. The highest densities of rhinos are found in savannas on
+                           nutrient-rich
+                           soils and in succulent Valley Bushveld areas. </p>
+                     </div>
+                     <div class="col2  margin-top">
+                        <p class="body-text">Black Rhino are browsers and favour small acacia's and other palatable
+                           woody
+                           species (Grewia's, Euphorbiaceae species, etc.) as well as palatable herbs and succulents.
+                           However, because of high levels of secondary plant chemicals, much woody plant browse
+                           (especially many evergreen species) in some areas is unpalatable. Failure to appreciate this,
+                           has in the past led to carrying capacities being over-estimated in some areas. Apart from
+                           plant
+                           species composition and size structure, Black Rhino carrying capacity is related to rainfall,
+                           soil nutrient status, fire histories, levels of grass interference, extent of frost and
+                           densities of other large browsers. To maintain rapid population growth rates and prevent
+                           potential habitat damage if the population overshoots carrying capacity, populations of Black
+                           Rhinos should be managed at densities below long term ecological carrying capacity (i.e.,
+                           below
+                           zero growth densities). Surplus rhino that are removed from such established populations are
+                           routinely being profitably invested in new areas with suitable habitat and protection where
+                           populations can grow rapidly.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- ================== HABITAT CLOSED ================== -->
+         </div>
+
+         <button class="accordion">Taxonomy / Threats / Use and Trade</button>
+         <div class="panel">
+            <!-- ================== TREATS & USE  ================== -->
+            <div class="animal-taxonomy white-bg">
+               <div class="container">
+                  <div class="flex-dsk">
+                     <div class="col1">
+                        <p class="figure-description">Kingdom</p>
+                        <p class="figure-description body-text-uppercase"><strong>Animalia</strong></p><br>
+                        <p class="figure-description">Phylia</p>
+                        <p class="figure-description body-text-uppercase"><strong>Chordata</strong> </p><br>
+                        <p class="figure-description">Order</p>
+                        <p class="figure-description body-text-uppercase"><strong>Perissodactyla</strong> </p><br>
+                        <p class="figure-description">Family</p>
+                        <p class="figure-description body-text-uppercase"><strong>Rhinocerotidae</strong> </p><br>
+                        <p class="figure-description">Genus</p>
+                        <p class="figure-description body-text-uppercase"><strong>Diceros</strong></p><br>
+                        <br>
+                        <div class="divider divider-shortened"></div>
+                        <p class="body-text body-text-uppercase"><strong>Authority</strong></p>
+                        <p class="figure-description">Linnaeus, 1758</p><br>
+                        <p class="figure-description body-text-uppercase"><strong>English</strong></p>
+                        <p class="figure-description body-text-uppercase">Black Rhino, Black Rhinoceros, <br>Hook-Lipped
+                           Rhinoceros </p><br>
+                        <p class="figure-description body-text-uppercase"><strong>French</strong> </p>
+                        <p class="figure-description body-text-uppercase">hinocéros Noir </p><br>
+                        <p class="figure-description body-text-uppercase"><strong>Spanish; Castilian</strong> ; </p>
+                        <p class="figure-description body-text-uppercase">Rhinoceronte Negro
+                        </p><br>
+                        <br>
+                     </div>
+                     <div class="col2  margin-top">
+                        <p class="figure-description">Biological resource use </p>
+                        <p class="figure-description body-text-uppercase"><strong>Hunting & trapping terrestrial
+                              animals</strong></p><br>
+                        <p class="figure-description">Human intrusions & disturbance</p>
+                        <p class="figure-description body-text-uppercase"><strong>War, civil unrest & military
+                              exercises</strong> </p><br>
+                        <p class="figure-description">Natural system modifications</p>
+                        <p class="figure-description body-text-uppercase"><strong>Other ecosystem modifications</strong>
+                        </p><br>
+                        <p class="figure-description">Invasion and other problematic species, genes & diseases</p>
+                        <p class="figure-description body-text-uppercase"><strong>Invasive non-native/Alien
+                              species/Diseases </strong> </p><br>
+                        <br>
+                        <p class="body-text">here is significant population genetic differentiation between all three
+                           extant subspecies of Black Rhinoceros (hereafter Black Rhino) recognised by the IUCN SSC
+                           African
+                           Rhinoceros Specialist Group (AfRSG) (Harley et al. 2005), and the differences are consistent
+                           with them being considered subspecies although it is unlikely that outbreeding depression
+                           would
+                           occur in any mix of these populations (E. Harley pers. comm. 2016).
+
+                           Subsequent classification analyses of RhoDIS DNA samples (originally undertaken primarily for
+                           forensic purposes) also strongly supported use of the current three surviving subspecies
+                           classification at a continental level. It also indicated that Diceros bicornis minor samples
+                           could be further subdivided into those of Zambesi, KwaZulu-Natal (KZN) or mixed Zambesi/KZN
+                           origin (Emslie 2018, Harper et al. 2018). Moodley et al. (2017) also found this partitioning
+                           of
+                           D. b. minor. The populations founded with KZN animals were found to be less genetically
+                           diverse
+                           than ones derived from Zambesi animals due to a relatively recent severe bottleneck (Emslie
+                           2018, Harper et al. 2018). Data indicates that most of the genetic diversity has been
+                           recovered
+                           in the large mixed KZN/Zambesi founded population in the Kruger National Park (C. Harper
+                           pers.
+                           comm. 2018).</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- ================== TREATS & USE CLOSED ================== -->
+         <div class="animal-bibliography">
+            <button class="accordion">Bibliography</button>
+            <div class="panel">
+               <p>Benson, C. W. 1960. The birds of the Comoro Islands: results of the British Ornithologists' Union
+                  Centenary Expedition 1958. Ibis 103b: 5-106.
+
+                  del Hoyo, J.; Elliott, A.; Christie, D. 2009. Handbook of the Birds of the World, vol. 14:
+                  Bush-shrikes
+                  to Old World Sparrows. Lynx Edicions, Barcelona, Spain.
+
+                  IUCN. 2016. The IUCN Red List of Threatened Species. Version 2016-3. Available at:
+                  www.iucnredlist.org.
+                  (Accessed: 07 December 2016).
+
+                  Louette, M.; Neri, F.; Stevens, J. 1993. Distribution et abondance des oiseaux forestiers de Mayotte
+                  (Océan Indien). L'Oiseau et la Revue Française d'Ornithologie 63: 115-126.
+
+                  Louette, M.; Stevens, J.; Bijnens, L.; Janssens, L. 1988. Survey of the endemic avifauna of the Comoro
+                  Islands. International Council for Bird Preservation, Cambridge, U.K.
+
+                  Rocamora, G. 2004. Les oiseaux des espaces naturels remarquables de Mayotte. Rapport SEF/DAF.
+                  Collectivité de Mayotte. Available at:
+                  #http://etic.univ-reunion.fr/get/images/Mayotte/mayotte_oiseaux.pdf#.
+
+                  Safford, R. J. 2001. Mayotte. In: Fishpool, L.D.C.; Evans, M.I. (ed.), Important Bird Areas in Africa
+                  and
+                  associated islands: Priority sites for conservation, pp. 597-601. Pisces Publications and BirdLife
+                  International (BirdLife Conservation Series No.11), Newbury and Cambridge, UK.
+
+                  Safford, R. J.; Evans, M. I. 1992. Birds on the Comoro Islands, April 1990. Scopus 15: 93-101.
+
+                  Stevens, J.; Louette, M. 1999. Land bird abundance and the conservation of biodiversity on the island
+                  of
+                  Mayotte (Indian Ocean). Alauda 67: 123-139.</p><br>
+               <!-- <div class="divider"> </div> -->
+            </div>
+         </div>
+
+
+         <!-- ANIMAL CARDS SECTION -->
+         <h2 class="animal-card-heading"> The Rhino Family</h2>
+         <div class="animal-cards">
+            <!--card 1 -->
+            <a href="#">
+               <div class="animal-card">
+                  <div class="animal-card-header">
+                     <p class="body-text"> Mammalia</p>
+                     <h3 class="animal-card-title">Elasmotherium</h3>
+                     <p class="body-text"> Elasmotherium caucasicum</p>
+                  </div>
+                  <img src="images/detailpage/elasmotherium.jpg" alt="an ancient rhino with a big horn">
+                  <div class="animal-card-info">
+                     <div class="status-circle EX"> <strong>EX</strong></div>
+
+                  </div>
+               </div>
+            </a>
+
+            <!--card 2 -->
+            <a href="#">
+               <div class="animal-card">
+                  <div class="animal-card-header">
+                     <p class="body-text"> Mammalia</p>
+                     <h3 class="animal-card-title">Javan Rhinoceros</h3>
+                     <p class="body-text"> Rhinoceros sondaicus </p>
+                  </div>
+                  <img src="images/detailpage/javan-rhinoceros.jpg" alt="a javan rhino looking to the right">
+                  <div class="animal-card-info">
+                     <div class="status-circle CR"> <strong>CR</strong></div>
+                     <p class="animal-card-indicator-green body-text"> Increasing <span class="arrow-scale">▲</span></p>
+                  </div>
+               </div>
+            </a>
+
+            <!--card 3 -->
+            <a href="#">
+               <div class="animal-card">
+                  <div class="animal-card-header">
+                     <p class="body-text"> Mammalia</p>
+                     <h3 class="animal-card-title">Woolly rhinoceros</h3>
+                     <p class="body-text">Coelodonta antiquitatis</p>
+                  </div>
+                  <img src="images/detailpage/woolly.jpg" alt="black and white image of a rhino with long hair">
+                  <div class="animal-card-info">
+                     <div class="status-circle EX"> <strong>EX</strong></div>
+                  </div>
+               </div>
+            </a>
+            <!--card 4 -->
+            <a href="#">
+               <div class="animal-card">
+                  <div class="animal-card-header">
+                     <p class="body-text"> Mammalia</p>
+                     <h3 class="animal-card-title"> Greater One-horned Rhino</h3>
+                     <p class="body-text">Rhinoceros unicornis</p>
+                  </div>
+                  <img src="images/detailpage/greater-one-horned-rhino.png" alt="two rhinos in shrubland">
+                  <div class="animal-card-info">
+                     <div class="status-circle VU"> <strong>VU</strong></div>
+                     <p class="animal-card-indicator-green body-text"> Increasing<span class="arrow-scale">▲</span></p>
+                  </div>
+               </div>
+            </a>
+            <!--card 5 -->
+            <a href="#">
+               <div class="animal-card">
+                  <div class="animal-card-header">
+                     <p class="body-text"> Mammalia</p>
+                     <h3 class="animal-card-title">White Rhino</h3>
+                     <p class="body-text">Ceratotherium simum</p>
+                  </div>
+                  <img src="images/detailpage/white-rhino.jpg" alt="a white rhino sitting in grass">
+                  <div class="animal-card-info">
+                     <div class="status-circle NT"> <strong>NT</strong></div>
+                     <p class="animal-card-indicator-red body-text"> Decreasing <span class="arrow-scale">▼</span></p>
+                  </div>
+               </div>
+
+               <!--card 6 -->
+               <a href="#">
+                  <div class="animal-card">
+                     <div class="animal-card-header">
+                        <p class="body-text"> Mammalia</p>
+                        <h3 class="animal-card-title">Sumatran Rhinoceros</h3>
+                        <p class="body-text"> Dicerorhinus sumatrensis</p>
+                     </div>
+                     <img src="images/detailpage/sumatran-rhinoceros.jpg" alt="a sumatran rhino in jungle">
+                     <div class="animal-card-info">
+                        <div class="status-circle CR"> <strong>CR</strong></div>
+                        <p class="animal-card-indicator-red body-text"> Decreasing <span class="arrow-scale">▼</span>
+                        </p>
+                     </div>
+                  </div>
+               </a>
+               <!--card 7 -->
+               <a href="#" class="dead">
+                  <div class="animal-card">
+                     <div class="animal-card-header">
+                        <p class="body-text"> Mammalia</p>
+                        <h3 class="animal-card-title">Stephanorhinus kirchbergensis</h3>
+                        <p class="body-text">Dicerorhinus sumatrensis </p>
+                     </div>
+                     <div class="no-image"></div>
+                     <div class="animal-card-info">
+                        <div class="status-circle EX"> <strong>EX</strong></div>
+                     </div>
+                  </div>
+               </a>
+         </div>
+
+         <!-- ================== ANIMAL CARDS SECTION CLOSED ============================= -->
+      </div>
+   </div>
+
+   <footer>
+      <div class="footer">
+         <div class="row">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+         </div>
+
+         <div class="row">
+            <ul>
+               <li><a href="#">Contact us</a></li>
+               <li><a href="#">Privacy Policy</a></li>
+               <li><a href="#">Terms & Conditions</a></li>
+
+            </ul>
+         </div>
+
+         <div class="row">
+            REDLIST © 2022 - All rights reserved
+         </div>
+      </div>
+   </footer>
+
+   <!-- JS -->
+   <script src="./js/script.js"></script>
+
+
+</body>
+
+
+</html>

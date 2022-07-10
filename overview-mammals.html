@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CodePen - Responsive Navigation Menu with Search Bar</title>
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css'>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<!-- =============================================================================
+   ============================navbar======================================
+ ============================================================================= -->
+<header class="header" id="header">
+    <nav class="navbar nav-container">
+        <a href="./index.html"><img src="logo.svg" alt="Redlist Logo" class="logo"></a>
+        <div class="burger" id="burger">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+        </div>
+        <span class="overlay"></span>
+        <div class="menu" id="menu">
+            <ul class="menu-inner">
+                <li class="menu-item"><a class="menu-link menu-link-current" href="overview.html">Animals</a></li>
+                <li class="menu-item"><a class="menu-link" href="#">About</a></li>
+                <li class="menu-item"><a class="menu-link" href="#">News</a></li>
+                <li class="menu-item"><a class="menu-link" href="#">Take Action</a></li>
+            </ul>
+        </div>
+        <button><i class="bx bx-search search-toggle"></i></button>
+        <form class="search-block">
+            <span><i class="bx bx-arrow-back search-cancel"></i></span>
+            <input type="search" name="search" class="search-input" placeholder="Search here..." autofocus>
+        </form>
+    </nav>
+</header>
+<!-- =============================================================================
+ ============================navbar closed======================================
+============================================================================= -->
+<!-- BREADCRUMB -->
+<div class="breadcrumb container">
+    <a href="overview.html" class="bc-item"> Animals /</a>
+    <a href="overview-mammals.html" class="bc-item bc-item-current"> Mammals </a>
+
+</div>
+<!-- BREADCRUMB CLOSED -->
+
+<main>
+    <!-- ================ FEATURED ANIAMALS SECTION ==================== -->
+    <section class="overview-grid-section container">
+        <h2 class="margin-top margin-bottom"> Discover our amazing species</h2>
+        <div class="mammals-overview flex">
+            <!-- box 3 habitats -->
+            <div class="aside-habitat-2 white-bg round-corner dropshadow margin-bottom">
+                <h4>Habitats</h4>
+                <div class="overview-icon-box">
+                    <div class="flex">
+                        <img src="images/icons/forest.svg" alt="a forest icon" class="svg-icon">
+                        <a class="icon-description"> Forest</a>
+                    </div>
+                    <div class="flex">
+                        <img src="images/icons/shrubland.svg" alt="a shrubland icon" class="svg-icon">
+                        <a class="icon-description"> Shrubland</a>
+                    </div>
+                    <div class="flex">
+                        <img src="images/icons/desert.svg" alt="a desert icon" class="svg-icon">
+                        <a class="icon-description"> Desert</a>
+                    </div>
+                    <div class="flex">
+                        <img src="images/icons/savanna.svg" alt="a savanna icon" class="svg-icon">
+                        <a class="icon-description"> Savanna</a>
+                    </div>
+                    <div class="flex">
+                        <img src="images/icons/marine.svg" alt="a water icon" class="svg-icon">
+                        <a class="icon-description"> Marine</a>
+                    </div>
+
+                    <div class="flex">
+                        <img src="images/icons/grassland.svg" alt="a grassland icon" class="svg-icon">
+                        <a class="icon-description"> Grasland</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- box 5 featured animal -->
+            <div
+                class="featured-animal-card flex background-image animal-mammals round-corner dropshadow margin-bottom">
+                <p class="featured-animal-subheading uppercase">Featured Species</p>
+                <h2>Mountain Goat</h2>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <div class="round-corner-top white-bg">
+
+
+        <!-- ================ ANIMAL CARDS SECTION ================ -->
+        <section class="container">
+            <h3 class="animal-card-heading padding-top margin-top"> Recently Assessed species</h3>
+            <div class="animal-cards">
+                <!--card 1 -->
+                <a href="#">
+                    <div class="animal-card">
+                        <div class="animal-card-header">
+                            <p class="body-text"> Mammalia</p>
+                            <h3 class="animal-card-title">Red Panda</h3>
+                            <p class="body-text"> Ailurus fulgens</p>
+                        </div>
+                        <img src="images/overviewpage-mammals/red-panda.jpg" alt="a red panda sitting on a tree">
+                        <div class="animal-card-info">
+                            <div class="status-circle EN"> <strong>EN</strong></div>
+                            <p class="animal-card-indicator-red body-text"> Decreasing <span
+                                    class="arrow-scale">▼</span></p>
+                        </div>
+                    </div>
+                </a>
+
+                <!--card 2 -->
+                <a href="#">
+                    <div class="animal-card">
+                        <div class="animal-card-header">
+                            <p class="body-text"> Mammalia</p>
+                            <h3 class="animal-card-title">Sea Otter</h3>
+                            <p class="body-text"> Enhydra lutris </p>
+                        </div>
+                        <img src="images/overviewpage-mammals/sea-otter.jpg" alt="a sea otter swimming n its back">
+                        <div class="animal-card-info">
+                            <div class="status-circle EN"> <strong>EN</strong></div>
+                            <p class="animal-card-indicator-red body-text"> Decreasing <span
+                                    class="arrow-scale">▼</span></p>
+                        </div>
+                    </div>
+                </a>
+
+
+                <!--card 3 -->
+                <a href="#">
+                    <div class="animal-card">
+                        <div class="animal-card-header">
+                            <p class="body-text"> Mammalia</p>
+                            <h3 class="animal-card-title">Brown Spider Monkey</h3>
+                            <p class="body-text">Ateles hybridus </p>
+                        </div>
+                        <img src="images/overviewpage-mammals/spider-monkey.jpg"
+                            alt="a spider monkey sitting and looking into the camera">
+                        <div class="animal-card-info">
+                            <div class="status-circle CR"> <strong>CR</strong></div>
+                            <p class="animal-card-indicator-green body-text"> Increasing <span
+                                    class="arrow-scale">▲</span></p>
+                        </div>
+                    </div>
+                </a>
+
+                <!--card 4 -->
+                <a href="#">
+                    <div class="animal-card">
+                        <div class="animal-card-header">
+                            <p class="body-text"> Mammalia</p>
+                            <h3 class="animal-card-title"> Maned Wolf</h3>
+                            <p class="body-text">Chrysocynon brachyurus </p>
+                        </div>
+                        <img src="images/overviewpage-mammals/maned-wolf.jpg"
+                            alt="a maned wolf looking behind its back">
+                        <div class="animal-card-info">
+                            <div class="status-circle NT"> <strong>NT</strong></div>
+                            <p class="animal-card-indicator-grey body-text"> Unknown</p>
+                        </div>
+                    </div>
+                </a>
+
+                <!--card 5 -->
+                <a href="#">
+                    <div class="animal-card">
+                        <div class="animal-card-header">
+                            <p class="body-text"> Mammalia</p>
+                            <h3 class="animal-card-title">Thomas's Fruit-Eating Bat</h3>
+                            <p class="body-text">Dermanura watsoni</p>
+                        </div>
+                        <img src="images/overviewpage-mammals/thomass-fruit-eating-bat.jpg"
+                            alt="a bat hanging on a leaf">
+                        <div class="animal-card-info">
+                            <div class="status-circle LC"> <strong>LC</strong></div>
+                            <p class="animal-card-indicator-red body-text"> Decreasing <span
+                                    class="arrow-scale">▼</span></p>
+                        </div>
+                    </div>
+                </a>
+
+                <!--card 6 -->
+                <a href="#">
+                    <div class="animal-card">
+                        <div class="animal-card-header">
+                            <p class="body-text"> Mammalia</p>
+                            <h3 class="animal-card-title">Moose</h3>
+                            <p class="body-text">Alces alces</p>
+                        </div>
+                        <img src="images/overviewpage-mammals/moose.jpg" alt="a brown moose in a field of grass">
+                        <div class="animal-card-info">
+                            <div class="status-circle LC"> <strong>LC</strong></div>
+                            <p class="animal-card-indicator-green body-text"> Increasing <span
+                                    class="arrow-scale">▲</span></p>
+                        </div>
+                    </div>
+                </a>
+                <!--card 7 -->
+                <a href="#">
+                    <div class="animal-card">
+                        <div class="animal-card-header">
+                            <p class="body-text"> Mammalia</p>
+                            <h3 class="animal-card-title">Desmarest`s Hutia</h3>
+                            <p class="body-text"> Vapromys pilorides</p>
+                        </div>
+                        <img src="images/overviewpage-mammals/desmarest-hutia.jpg"
+                            alt="a hutia sitting on a tree branch">
+                        <div class="animal-card-info">
+                            <div class="status-circle LC"> <strong>LC</strong></div>
+                            <p class="animal-card-indicator-green body-text"> Increasing <span
+                                    class="arrow-scale">▲</span></p>
+                        </div>
+                    </div>
+                </a>
+                <!--card 8 -->
+                <a href="#">
+                    <div class="animal-card">
+                        <div class="animal-card-header">
+                            <p class="body-text"> Mammalia</p>
+                            <h3 class="animal-card-title">Jaguarundi</h3>
+                            <p class="body-text">Herpailurus yagouaroundi</p>
+                        </div>
+                        <img src="images/overviewpage-mammals/jaguarundi.jpg"
+                            alt="a small jaguar sneaking through a field of grass">
+                        <div class="animal-card-info">
+                            <div class="status-circle LC"> <strong>LC</strong></div>
+                            <p class="animal-card-indicator-red body-text"> Decreasing <span
+                                    class="arrow-scale">▼</span></p>
+                        </div>
+                    </div>
+                </a>
+
+                <!--card 9 -->
+                <a href="detailpage.html">
+                    <div class="animal-card">
+                        <div class="animal-card-header">
+                            <p class="body-text"> Mammalia</p>
+                            <h3 class="animal-card-title">Black Rhino</h3>
+                            <p class="body-text">Diceros Bicornis</p>
+                        </div>
+                        <img src="images/overviewpage-mammals/black-rhino.jpg"
+                            alt=" a black rhino wandering through shrubland">
+                        <div class="animal-card-info">
+                            <div class="status-circle NT"> <strong>NT</strong></div>
+                            <p class="animal-card-indicator-green body-text"> Increasing <span
+                                    class="arrow-scale">▲</span></p>
+                        </div>
+                    </div>
+                </a>
+
+                <!--card 10 -->
+                <a href="detailpage.html">
+                    <div class="animal-card">
+                        <div class="animal-card-header">
+                            <p class="body-text"> Mammalia</p>
+                            <h3 class="animal-card-title">Blue Monkey</h3>
+                            <p class="body-text">Cercopithecus mitis</p>
+                        </div>
+                        <img src="images/overviewpage-mammals/blue-monkey.jpg"
+                            alt="a monkey with red eyes">
+                        <div class="animal-card-info">
+                            <div class="status-circle LC"> <strong>LC</strong></div>
+                            <p class="animal-card-indicator-red body-text"> Decreasing <span
+                                    class="arrow-scale">▼</span></p>
+                        </div>
+                    </div>
+                </a>
+
+                <!--card 11 -->
+                <a href="detailpage.html">
+                    <div class="animal-card">
+                        <div class="animal-card-header">
+                            <p class="body-text"> Mammalia</p>
+                            <h3 class="animal-card-title">Tamaraw</h3>
+                            <p class="body-text">Bubalus mindorensis</p>
+                        </div>
+                        <img src="images/overviewpage-mammals/tamaraw.jpg"
+                            alt=" a black rhino wandering through shrubland">
+                        <div class="animal-card-info">
+                            <div class="status-circle CR"> <strong>CR</strong></div>
+                            <p class="animal-card-indicator-green body-text"> Decreasing <span
+                                    class="arrow-scale">▼</span></p>
+                        </div>
+                    </div>
+                </a>
+
+                <!--card 12 -->
+                <a href="detailpage.html">
+                    <div class="animal-card">
+                        <div class="animal-card-header">
+                            <p class="body-text"> Mammalia</p>
+                            <h3 class="animal-card-title">Temminck's Pangolin</h3>
+                            <p class="body-text">Smutsia temminckii</p>
+                        </div>
+                        <img src="images/overviewpage-mammals/pangolin.jpg"
+                            alt=" a black rhino wandering through shrubland">
+                        <div class="animal-card-info">
+                            <div class="status-circle EN"> <strong>EN</strong></div>
+                            <p class="animal-card-indicator-grey body-text">Unknown</p>
+                        </div>
+                    </div>
+                </a>
+
+
+
+            </div>
+            <a href="#" class="link-centered"> View more recently assessed mammals</a>
+        </section>
+        <!-- ================== ANIMAL CARDS SECTION CLOSED ============================= -->
+
+
+    </div>
+</main>
+
+<footer>
+    <div class="footer">
+        <div class="row">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+
+        <div class="row">
+            <ul>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+
+            </ul>
+        </div>
+
+        <div class="row">
+            REDLIST © 2022 - All rights reserved
+        </div>
+    </div>
+</footer>
+
+<!-- JS -->
+<script src="./js/script.js"></script>
+</body>
+
+</html>
+
+

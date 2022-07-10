@@ -1,0 +1,63 @@
+.accordion {
+    font-family: inherit;
+    font-size: 1.941rem;
+    font-weight: 700;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+  }
+  .accordion, .panel {
+      margin-top:2em;
+  }
+  .active, .accordion:hover {
+    background-color:var(--color-grey2);
+    border-radius: 20px;
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: var(--color-black);
+    font-weight: 700;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: var(--color-white);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+
+  @media (min-width: 800px) {
+
+    .init-show{
+      pointer-events: none;
+    }
+
+    .init-show:after{
+      display: none;
+    }
+
+    .init-show + .panel {
+      max-height: none;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .accordion{
+      font-size: 1rem;
+      }
+  }
